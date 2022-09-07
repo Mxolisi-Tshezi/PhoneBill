@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/greet-style.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="nav">
+    <a href="/">
+      <button class="home" type=""> HOME </button>
+
+    </a>
+    <form action="/calc_bill">
+
+      <a href="/price_plans">
+        <button type=""> Price Plan </button>
+      </a>
+    </form>
+    <a href="/link user">
+      <button class="link" type=""> Link user </button>
+    </a>
+  </div>
+    <table>
+      <h3>Price Plan</h3>
+
+      <tr>
+        {{#each ourNames}}
+
+        <h2><br> <a class="table" href="/price_plans/{{names}}">{{names}}</br></a></h2>
+
+
+        {{/each}}
+
+      </tr>
+
+<h2><br> <a class="table" href="/link_user{{names}}">{{names}}</br></a></h2>
+
+</body>
+
+</html>
